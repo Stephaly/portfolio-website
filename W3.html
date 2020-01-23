@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- begin favicon code -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+  <meta charset="utf-8">
+  <title>W3</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha">
+      <nav>
+        <ul>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <picture>
+        <source srcset="img/w3/1-Top-600px.jpg" media="(max-width:767px)">
+        <img src="img/w3/1-Top-1200px.jpg" alt="W3">
+      </picture>
+      <h3>W3 is a weather & water forecasting tool that provides future and current conditions, as well as local info, for both casual and serious water enthusiasts.</h3>
+      <div>
+        <h2>The Challenge</h2>
+        <p>Days on the water are meant to be everything but stressful. To avoid these, it’s good practice to check the conditions of the wind, waves, and weather near the body of water where we will be having fun. This can help us avoid dangerous
+          situations and better prepare for a day of sailing, diving, or surfing.</p>
+      </div>
+      <div>
+        <div>
+          <!-- Will probably remove line breaks making css sheets -->
+          <p>Project: W3 | responsive web app<br>
+            Role: UX Designer, UX Researcher, UI Designer<br>
+            Duration: July-December 2019<br>
+            Client: CareerFoundry (as student)</p>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <!-- Remove height and width after css sheets -->
+          <img src="img/w3/tools/photoshop-logo.svg" alt="Adobe Photoshop" height="50" width="50">
+          <img src="img/w3/tools/xd-logo.svg" alt="Adobe XD" height="50" width="50">
+          <img src="img/w3/tools/sketch-logo.svg" alt="Sketch" height="50" width="50">
+          <img src="img/w3/tools/balsamiq-logo.png" alt="Balsamiq" height="50" width="50">
+          <img src="img/w3/tools/invision-logo.svg" alt="InVision" height="50" width="50">
+          <img src="img/w3/tools/prott-logo.png" alt="Prott" height="50" width="50">
+          <img src="img/w3/tools/usability-hub-logo.png" alt="UsabilityHub" height="50" width="50">
+          <img src="img/w3/tools/optimal-workshop-logo.png" alt="Optimal Workshop" height="50" width="50">
+        </div>
+      </div>
+      <div>
+        <h2>Understanding the Problem</h2>
+        <div>
+          <div>
+            <h4>Potential Problems</h4>
+            <ul>
+              <li>Local reports and forecasts aren’t always accurate</li>
+              <li>Flooded with ads for the pro version</li>
+              <li>Doesn’t work on all platforms</li>
+              <li>Slow and prone to freezing/crashing</li>
+              <li>Can’t add or save places</li>
+              <li>Unintuitive layouts</li>
+              <li>Forces account creation just to view reports forecasts</li>
+              <li>Too much information / overwhelming for amateurs</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Problem Statement</h4>
+            <p>Users need a reliable, compatible app on which they can easily find accurate, comprehensible reports and forecasts without extra distractions because safety is the number one priority for air breathers in large bodies of water.</p>
+          </div>
+          <div>
+            <h4>Potential Solutions</h4>
+            <ul>
+              <li>W3 should pull its forecast data from proven reliable sources</li>
+              <li>Any ads should be tasteful and circumspect</li>
+              <li>Accounts should be optional</li>
+              <li>Development should be tested across multiple platforms</li>
+              <li>Layouts and features should go through several rounds of user testing</li>
+              <li>Users should be able to toggle between pro and amateur modes</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Competitive Analysis</h3>
+          <p>Focusing on Windy and Beachsafe – one weather-specific app and one safety-specific app – I identified each app’s key objectives, overall strategy, market advantage, marketing profile, and SWOT, and performed UX analyses.</p>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/4a-CompetitorProfile-Windy-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/4a-CompetitorProfile-Windy-1200px.jpg" alt="Windy" height="500">
+          </picture>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/4b-CompetitorProfile-Beachsafe-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/4b-CompetitorProfile-Beachsafe-1200px.jpg" alt="Beachsafe" height="500">
+          </picture>
+        </div>
+        <div>
+          <h3>User Stories</h3>
+          <p>Stories help personify the ever-elusive user.<p>
+              <div>
+                <ul>
+                  <li>As a new user, I want to use the app initially without being forced to create an account, so I can decide if I like the app enough to sign up.</li>
+                  <li>As a returning user, I want an account independent of a single device, so I don’t lose my settings/preferences if I get a new device.</li>
+                  <li>As a returning user, I want to log in with my social media or email, so I won’t need to remember another password.</li>
+                  <li>As a new user, I want a brief explanation to show me the ropes, so I can get to using the features quickly.</li>
+                  <li>As a returning user, I don’t want to be greeted with tutorials because I don’t want to waste time.</li>
+                  <li>As a user, I want a central location for my settings and preferences, so I can easily edit them.</li>
+                  <li>As a user, I want an easy way to access all sections of the app, so I don’t have to travel through multiple pages to reach the info I want.</li>
+                  <li>As a novice surfer, I want to know the current conditions at my beach (and any warning advisories) in simple terms, so I can surf safely.</li>
+                  <li>As a professional windsurfer, I want all the detailed current and wave information, so I can get the most out of my tricks.</li>
+                  <li>As a novice water sport enthusiast, I want accurate, easily understandable forecasts, so I can spend more time learning to ski and less time deciphering meteorological details.</li>
+                  <li>As a professional fishing guide, I want detailed forecasts, so I can accurately book my charters and lead my clients to the best angling areas.</li>
+                  <li>As an aunt with fish for nephews, I want tips and warnings of best practices and what to watch out for, so I can keep my charges safe while we’re on the water.</li>
+                  <li>As an avid phone photographer, I want a way to share my pics with other users, so they can benefit from my mad skillz.</li>
+                  <li>As a non-expert user, I just want the basic forecasts and info, so I can easily understanding whatever I’m looking at the plan my trip.</li>
+                  <li>As a wind guru, I want all the sticky details, so I can plan my parasailing in the most exciting areas (that aren’t deadly).</li>
+                  <li>As a user, I want somewhere to report bugs in the app, so I don’t have to deal with the same bugs over and over.</li>
+                  <li>As a developer, I want to quickly know about any bugs in the app, so my team and I can make our product better.</li>
+                  <li>As a user, I want to support good free apps, so people keep making them.</li>
+                  <li>As a developer, I want a way to collect donations for my free apps, so I can continue creating (and maybe eventually make a living off of) them.</li>
+                </ul>
+              </div>
+        </div>
+      </div>
+      <div>
+        <h2>Observe</h2>
+        <div>
+          <div>
+            <h4>Survey Insights</h4>
+            <ul>
+              <li>An overwhelming percentage of participants have experienced dangerous situations in their activities (74%) and said they would reference safety warnings/advice in an app if available (84%). So there’s clearly a market for a safety
+                section in an app, and I should use my interviews to hone in on the particulars.</li>
+              <li>Most of the participants use a forecast app for planning activities, at least sometimes. However, all but two utilized only basic weather apps – no tide/wind/wave data at all. So any new app might need to double as a basic forecast
+                app to be appealing, especially since nearly 70% of the participants only do their activities a few times a year. Interview questions can investigate this in more depth.</li>
+              <li>75% of the participants who don’t use an app for planning have never even thought about the possibility. This is something the marketing team might want to keep in mind when building their strategy – how to put this app in front of
+                people who may never have looked for a forecast app, but might use it if they saw it.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Interview Insights</h4>
+            <ul>
+              <li>Across the experience spectrum, user want hyper-local forecasts and conditions.</li>
+              <li>Safety warnings and advice are probably only useful for amateurs who are going to new or infrequently visited places. However, most survey participants and all the amateur interviewees wanted this feature, so it’s probably worth
+                building.</li>
+              <li>Everyone seems to want different information from their forecasts. Customizable options would be needed to suit everyone’s preferences.</li>
+              <li>No one likes intrusive ads, though most are fine with non-invasive ones.</li>
+              <li>Information highlights seem more in-demand than detailed reports.</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4>Affinity maps</h4>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/5b-AffinityMaps-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/5b-AffinityMaps-1200px.jpg" alt="Affinity Maps" height="300">
+          </picture>
+        </div>
+        <div>
+          <h4>Affinity Map Insights</h4>
+          <ul>
+            <li>Most of the participants only check basic weather conditions before planning water activities, so that feature should receive special consideration when designing the app.</li>
+            <li>Many use the native app on their phone, or one of the first apps appearing in a search of the app store, so marketing and ratings/reviews are going to play an important part in getting the app noticed by potential users.</li>
+            <li>Many participants are interested in hyper-local forecasts and current conditions of places they are planning to visit, so being able to connect with the closest reliable weather stations/buoys at any given location will be important.
+            </li>
+            <li>The ability to customize the forecast data types and ranges was sought after, so users should probably be able to set and save preferences, including notifications.</li>
+            <li>Almost everyone surveyed and/or interviewed was interested in a safety section, so including one seems worthwhile.</li>
+            <li>Interest seemed to focus around hazardous conditions and wildlife, not so much tips or advice on the particular activities; that helps narrow the focus.</li>
+            <li>Intrusive ads seemed to be the most common pain point – something to consider if the app is ever going to be supported by ads.</li>
+            <li>The common 10-day forecast wasn’t useful for anyone, so we can do away with that.</li>
+            <li>Most seemed in favor of simplifying both function and design; some fancy footwork will probably be needed to include both the desired level of customization while keeping the design simple.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Point of View</h2>
+        <div>
+          <h4>User Peronas</h4>
+          <p>Findings from the interviews and surveys helped shape the user personas, Tanya and Daniel. They represent the two distinct groups that emerged from previous research and aid in a user-centered approach.</p>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/6a-Tanya-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/6a-Tanya-1200px.jpg" alt="Tanya" height="300">
+          </picture>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/6b-Daniel-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/6b-Daniel-1200px.jpg" alt="Daniel" height="300">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h2>Ideate</h2>
+        <div>
+          <h4>User Journeys & Task Flows</h4>
+          <p>Journeys and task flows illustrate the personas’ needs, giving direction to the app’s creation.</p>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/7a-TanyaJourney-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/7a-TanyaJourney-1200px.jpg" alt="Tanya Journey" height="300">
+          </picture>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/7c-DanielJourney-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/7c-DanielJourney-1200px.jpg" alt="Daniel Journey" height="300">
+          </picture>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/7b-TanyaFlow-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/7b-TanyaFlow-1200px.jpg" alt="Tanya Flow" height="300">
+          </picture>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/7d-DanielFlow-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/7d-DanielFlow-1200px.jpg" alt="Daniel Flow" height="300">
+          </picture>
+        </div>
+        <div>
+          <h4>Card Sort & Site Map</h4>
+          <p>Closed card sorting validated the pre-determined categories, but also provided new insights, which were implemented in the final version of the site map.</p>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/7e-SiteMap-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/7e-SiteMap-1200px.jpg" alt="Site Map" height="300">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h2>Prototyping</h2>
+        <div>
+          <h4>Low-Fidelity</h4>
+          <p>~SEARCH FOR A SPOT~</p>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/8-Prototypes-lowfidelity-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/8-Prototypes-lowfidelity-1200px.jpg" alt="Low-Fidelity" height="300">
+          </picture>
+        </div>
+        <div>
+          <h4>Mid-Fidelity</h4>
+          <p>~ONBOARDING~</p>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/8-Prototypes-midfidelity-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/8-Prototypes-midfidelity-1200px.jpg" alt="Mid-Fidelity" height="300">
+          </picture>
+        </div>
+        <div>
+          <h4>High-Fidelity</h4>
+          <p>~VIEW A FAVORITE~</p>
+          <!-- Remove height after css sheet -->
+          <picture>
+            <source srcset="img/w3/8-Prototypes-highfidelity-600px.png" media="(max-width:767px)">
+            <img src="img/w3/8-Prototypes-highfidelity-1200px.png" alt="High-Fidelity" height="300">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h2>Testing & Iteration</h2>
+        <div>
+          <h4>Usability Test Report</h4>
+          <p>After concluding user testing, results were sorted into affinity maps and a rainbow spreadsheet. Top errors and issues identified during the usability test were addressed in the next iteration of the prototype.</p>
+          <picture>
+            <source srcset="img/w3/9-Testing-affinitymaps-600px.jpg" media="(max-width:767px)">
+            <img src="img/w3/9-Testing-affinitymaps-1200px.jpg" alt="Affinity Maps" height="300">
+          </picture>
+        </div>
+        <div>
+          <h4>Refining the Design</h4>
+          <p>Using preference tests, Gestalt psychology, Principles of Design, and peer reviews, the app went through several more iterations before reaching its current incarnation.</p>
+        </div>
+      </div>
+      <div>
+        <a href="https://xd.adobe.com/view/199e4897-a442-4305-6b34-ee6484bbf733-6faf/" target="_blank">
+          <h2>Finished Prototype</h2>
+        </a>
+      </div>
+      <div>
+        <h2>Appendix<h2>
+            <div>
+              <a href="https://drive.google.com/file/d/1qFa-sL7YYVbT8YBkLvvKFGtQsOEIKv0j/view" target="_blank"><p>Design Language System<br></a>
+              <a href="https://docs.google.com/spreadsheets/d/1hnTKIm09V27aIbjKO9zFXSHg68PuouzPVurT0125NoE/edit#gid=436865949" target="_blank">Rainbow Spread Sheet<br></a>
+              <a href="https://docs.google.com/document/d/17hQC5IzjqxpqBBgu3ArruNq76CAXMrHLODIP02N--gE/edit" target="_blank">Usability Test Script<br></a>
+              <a href="https://docs.google.com/spreadsheets/d/1pI2bwDx3mN-KUhvWkIpoWSSrUIPAIAaf9aLxM8Zv2is/edit#gid=0" target="_blank">Content Audit: Beachsafe</p></a>
+            </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div>
+      <h2><a href="#">Get in Touch</a></h2>
+      <div>
+        <!--Social Media Icons - remove height after css sheet-->
+        <a href="https://www.linkedin.com/in/slboyd/" target="_blank"><img src="img/linkedin-logo.svg" height="100"></a>
+      </div>
+      <div>
+        <p>Copyright Stephanie Boyd 2020</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+/*
+Colors:
+Purple: #470740  –> (71, 7, 64)
+Dark Red: #79002d  –> (121, 0, 45)
+Black: #000000  –> (0, 0, 0)
+Charcoal Gray: #6d6e71  –> (109, 110, 113)
+Cement Gray: #b2b3b6  –> (178, 179, 182)
+Glass Gray: #e7e7e8  –> (231, 231, 232)
+White: #ffffff  –> (255, 255, 255)
+
+Fonts:
+Open Sans
+Philosopher
+
+Notes:
+<a href="" class="my-link" id="my-link">...</a>
+Priority in this order:
+a –> element
+.my-link –> class
+#my-link –> id
+The only way to win against an ID selector is to use !important
+*/
+
+body {
+  background-color: white;
+  font-family: 'Open+Sans', sans-serif;
+  font-weight: 300;
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+header, footer {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+p, span {
+  font-size: 0.85em;
+  font-weight: 275;
+  line-height: 1.25;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 2.75em;
+  font-weight: bold
+}
+
+h2 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+picture {
+  /* empty */
+}
+
+#profilepic {
+  width: 25%;
+}
+
+#logo {
+  width: 15%;
+}
+
+a {
+  color: #470740;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #6d6e71;
+}
+a:hover,
+a:focus {
+  color: #79002d;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+/* 'selected link'
+a:active {
+  color: #1f0533;
+}*/
+
+
+
+
+
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #470740;
+  color: #ffffff !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #b2b3b6; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover,
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}

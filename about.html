@@ -11,6 +11,11 @@
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
+  <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>About Stephanie Boyd</title>
 </head>
@@ -18,7 +23,7 @@
 <body>
   <header>
     <div>
-      <img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha">
+      <img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha" id="logo">
       <nav>
         <ul>
           <li><a href="index.html">Projects</a></li>
@@ -43,7 +48,7 @@
             <!--left column-->
             <picture>
               <source srcset="img/stephanieboyd-400px.jpg" media="(max-width:767px)">
-              <img src="img/stephanieboyd-800px.jpg" alt="StephanieBoyd">
+              <img src="img/stephanieboyd-800px.jpg" alt="StephanieBoyd" id="profilepic">
             </picture>
           </div>
           <div>
@@ -62,7 +67,7 @@
               <li>BFA in Communication Design from Texas State University</li>
               <li>CareerFoundry: User Experience Design and Front End Development</li>
             </ul>
-            <a href="files/BoydResume-2020.pdf" target="_blank">Resume</a>
+            <a href="files/BoydResume-2020.pdf" target="_blank" class="button">Resume</a>
           </div>
           <div>
             <!--right column-->
@@ -106,7 +111,7 @@
 
   <footer id="contact">
     <div>
-      <h2><a href="#">Get in Touch</a></h2>
+      <h4><a href="#">Get in Touch</a></h4>
       <div>
         <!--Social Media Icons-->
                 <a href="https://www.linkedin.com/in/slboyd/" target="_blank"><img src="img/linkedin-logo.svg" height="100"></a>

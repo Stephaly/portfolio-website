@@ -22,46 +22,43 @@
 
 <body>
   <header>
-    <div>
-      <img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha" id="logo">
+    <div class="container">
       <nav>
         <ul>
+          <li><a href="index.html"><img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha" class="logo"></a></li>
           <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <div class="container">
     <div>
       <div>
         <h1>About</h1>
       </div>
     </div>
-    <div>
       <div>
-        <div>
-          <!--top-->
-          <div>
-            <!--left column-->
+        <div class="row">
+          <!--open top-->
+          <div class="column">
             <picture>
               <source srcset="img/stephanieboyd-400px.jpg" media="(max-width:767px)">
               <img src="img/stephanieboyd-800px.jpg" alt="StephanieBoyd" id="profilepic">
             </picture>
           </div>
-          <div>
-            <!--right column-->
+          <div class="column">
             <p>I’m a seasoned production designer and researcher, and fledgling UX designer. I was never particularly artsy, but I’ve always been fascinated by interpersonal communication, so learning the psychology of design and how to communicate
               with it was a natural fit for me. The research required for UX design is a logical progression of those interests.</p>
           </div>
         </div>
         <!--close top-->
         <div>
-          <!--bottom-->
+          <!--open bottom-->
           <div>
-            <!--left column-->
             <h2>Education</h2>
             <ul>
               <li>BFA in Communication Design from Texas State University</li>
@@ -70,9 +67,9 @@
             <a href="files/BoydResume-2020.pdf" target="_blank" class="button">Resume</a>
           </div>
           <div>
-            <!--right column-->
             <h2>Skills and Tools</h2>
-            <div>
+            <div class="row">
+            <div class="column">
               <h3>Skills</h3>
               <ul>
                 <li>Organization</li>
@@ -89,7 +86,7 @@
                 <li>Baking</li>
               </ul>
             </div>
-            <div>
+            <div class="column">
               <h3>Tools</h3>
               <ul>
                 <li>Adobe Photoshop, InDesign, Illustrator, & XD</li>
@@ -103,6 +100,7 @@
               </ul>
             </div>
           </div>
+          </div>
         </div>
         <!--close bottom-->
       </div>
@@ -110,10 +108,10 @@
   </main>
 
   <footer id="contact">
-    <div>
-      <h4><a href="#">Get in Touch</a></h4>
+    <div class="container">
+      <h4><a href="contact.html">Get in Touch</a></h4>
       <div>
-        <!--Social Media Icons-->
+        <!--LinkedIn Icon - NOT SURE WHY THIS IS CENTERED-->
                 <a href="https://www.linkedin.com/in/slboyd/" target="_blank"><img src="img/linkedin-logo.svg" height="100"></a>
 
         <!-- Weird Code!!!

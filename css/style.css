@@ -1,6 +1,6 @@
 /*
 Colors:
-Purple: #470740  –> (71, 7, 64)
+Purple: #470740  –> (71, 7, 64) –> @15%: #e3dae2
 Dark Red: #79002d  –> (121, 0, 45)
 Black: #000000  –> (0, 0, 0)
 Charcoal Gray: #6d6e71  –> (109, 110, 113)
@@ -21,14 +21,44 @@ a –> element
 The only way to win against an ID selector is to use !important
 */
 
+header {
+  background-color: #e3dae2; /* same as rgba(71, 7, 64, 0.15) */
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
+  box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
+  position: fixed;
+  width: 100%;
+  /*
+  padding: 20px; /* adds space inside the element
+  margin: 10px; adds space outside the element
+  border-bottom: 3px solid #470740;
+  */
+}
+
+* {
+  box-sizing: border-box; /* padding and border included in final width of element */
+}
+
 body {
   background-color: white;
   font-family: 'Open+Sans', sans-serif;
   font-weight: 300;
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(10px + (26 - 10) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.6;
   color: #4a4a4a;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+  z-index: 300;
+}
+
+main {
+  padding-top: 133px;
 }
 
 header, footer {
@@ -79,10 +109,6 @@ picture {
   width: 25%;
 }
 
-#logo {
-  width: 15%;
-}
-
 a {
   color: #470740;
   text-decoration: none; /* No underlining */
@@ -103,8 +129,6 @@ a:active {
 
 
 
-
-
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #470740;
@@ -119,4 +143,135 @@ a:active {
 .button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column { /* How to make column width dependent on the number of columns? */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #470740;
+}
+
+#hero {
+  background-color: white; /* same as #e3dae2 */
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #470740;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav > ul { /* selects unordered lists within the nav element */
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li { /* selects list elements in unordered lists within the nav element */
+  display: inline-block;
+}
+
+nav > ul > li > a { /* selects links that are list elements within an unordered list within the nav element */
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #470740;
+}
+
+nav > ul > li > a:visited {
+  color: #6d6e71
+}
+
+nav > ul > li > a:hover, a:active {
+  color: #79002d;
+  text-decoration: underline;
+}
+
+/* Container holding W3 image and the text – INCORRECT scrolling over navigation */
+.img-container {
+ position: relative;
+ padding-top: 5px;
+ z-index: -1;
+}
+
+/* Bottom left text */
+.text-block {
+ position: absolute;
+ bottom: -30px;
+ left: 30px;
+ color: black;
+ padding-left: 20px;
+ padding-right: 600px;
+}
+
+.challenge { /* NOT WORKING */
+  background-image: url("img/w3/2-TheChallengebackground-1200px.jpg");
+}
+
+.tools {
+  margin-top: -10px;
+}
+
+.prototyping {
+  background-color: #cdd6e5;
+}
+
+.user-stories {
+  background-image: linear-gradient(#bc193b, #7e0620);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+.observe {
+  background-color: #cdd6e5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.affinity-insights {
+  background-color: #cdd6e5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.appendix > ul {
+  list-style-type: none;
+  padding: 0;
 }

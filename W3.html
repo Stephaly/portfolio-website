@@ -22,55 +22,79 @@
 
 <body>
   <header>
-    <div>
-      <img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha" id="logo">
+    <div class="container">
       <nav>
         <ul>
+          <li><a href="index.html"><img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha" class="logo"></a></li>
           <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div>
-      <picture>
-        <source srcset="img/w3/1-Top-600px.jpg" media="(max-width:767px)">
-        <img src="img/w3/1-Top-1200px.jpg" alt="W3">
-      </picture>
-      <h3>W3 is a weather & water forecasting tool that provides future and current conditions, as well as local info, for both casual and serious water enthusiasts.</h3>
-      <div>
-        <h2>The Challenge</h2>
-        <p>Days on the water are meant to be everything but stressful. To avoid these, it’s good practice to check the conditions of the wind, waves, and weather near the body of water where we will be having fun. This can help us avoid dangerous
-          situations and better prepare for a day of sailing, diving, or surfing.</p>
-      </div>
-      <div>
-        <div>
-          <!-- Will probably remove line breaks making css sheets -->
-          <p>Project: W3 | responsive web app<br>
-            Role: UX Designer, UX Researcher, UI Designer<br>
-            Duration: July-December 2019<br>
-            Client: CareerFoundry (as student)</p>
-        </div>
-        <div>
-          <h4>Tools</h4>
-          <!-- Remove height and width after css sheets -->
-          <img src="img/w3/tools/photoshop-logo.svg" alt="Adobe Photoshop" height="50" width="50">
-          <img src="img/w3/tools/xd-logo.svg" alt="Adobe XD" height="50" width="50">
-          <img src="img/w3/tools/sketch-logo.svg" alt="Sketch" height="50" width="50">
-          <img src="img/w3/tools/balsamiq-logo.png" alt="Balsamiq" height="50" width="50">
-          <img src="img/w3/tools/invision-logo.svg" alt="InVision" height="50" width="50">
-          <img src="img/w3/tools/prott-logo.png" alt="Prott" height="50" width="50">
-          <img src="img/w3/tools/usability-hub-logo.png" alt="UsabilityHub" height="50" width="50">
-          <img src="img/w3/tools/optimal-workshop-logo.png" alt="Optimal Workshop" height="50" width="50">
+    <div class="container">
+      <div class="img-container">
+        <picture>
+          <source srcset="img/w3/1-Top-600px.jpg" media="(max-width:767px)">
+          <img src="img/w3/1-Top-1200px.jpg" alt="W3">
+        </picture>
+        <div class="text-block">
+          <h4>W3 is a weather & water forecasting tool that provides future and current conditions, as well as local info, for both casual and serious water enthusiasts.</h4>
         </div>
       </div>
-      <div>
-        <h2>Understanding the Problem</h2>
-        <div>
+      <div class="challenge" !important>
+        <h2>
+          <center>The Challenge</center>
+        </h2>
+        <p>
+          <center>Days on the water are meant to be everything but stressful. To avoid these, it’s good practice to check the conditions of the wind, waves, and weather near the body of water where we will be having fun. This can help us avoid
+            dangerous
+            situations and better prepare for a day of sailing, diving, or surfing.</center>
+        </p>
+      </div>
+      <div class="row">
+        <div clas="column">
           <div>
+            <p><b>Project:</b> W3 | responsive web app<br>
+              <b>Role:</b> UX Designer, UX Researcher, UI Designer<br>
+              <b>Duration:</b> July-December 2019<br>
+              <b>Client:</b> CareerFoundry (as student)</p>
+          </div>
+        </div>
+          <div class="column">
+            <p align="right"><b>Tools:</b></p>
+          </div>
+          <div class="column">
+          <div class="tools">
+            <div class="row">
+              <div class="column">
+                <img src="img/w3/tools/photoshop-logo.svg" alt="Adobe Photoshop">
+                <img src="img/w3/tools/xd-logo.svg" alt="Adobe XD">
+              </div>
+              <div class="column">
+                <img src="img/w3/tools/sketch-logo.svg" alt="Sketch">
+                <img src="img/w3/tools/balsamiq-logo.png" alt="Balsamiq">
+              </div>
+              <div class="column">
+                <img src="img/w3/tools/invision-logo.svg" alt="InVision">
+                <img src="img/w3/tools/prott-logo.png" alt="Prott">
+              </div>
+              <div class="column">
+                <img src="img/w3/tools/usability-hub-logo.png" alt="UsabilityHub">
+                <img src="img/w3/tools/optimal-workshop-logo.png" alt="Optimal Workshop">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2><center>Understanding the Problem</center></h2>
+        <div class="row">
+          <!-- NOT SURE WHY THESE COLUMNS ARE SCRUNCHED -->
+          <div class="column">
             <h4>Potential Problems</h4>
             <ul>
               <li>Local reports and forecasts aren’t always accurate</li>
@@ -83,11 +107,11 @@
               <li>Too much information / overwhelming for amateurs</li>
             </ul>
           </div>
-          <div>
+          <div class="column">
             <h4>Problem Statement</h4>
-            <p>Users need a reliable, compatible app on which they can easily find accurate, comprehensible reports and forecasts without extra distractions because safety is the number one priority for air breathers in large bodies of water.</p>
+            <p align="center">Users need a reliable, compatible app on which they can easily find accurate, comprehensible reports and forecasts without extra distractions because safety is the number one priority for air breathers in large bodies of water.</p>
           </div>
-          <div>
+          <div class="column">
             <h4>Potential Solutions</h4>
             <ul>
               <li>W3 should pull its forecast data from proven reliable sources</li>
@@ -100,22 +124,26 @@
           </div>
         </div>
         <div>
-          <h3>Competitive Analysis</h3>
-          <p>Focusing on Windy and Beachsafe – one weather-specific app and one safety-specific app – I identified each app’s key objectives, overall strategy, market advantage, marketing profile, and SWOT, and performed UX analyses.</p>
-          <!-- Remove height after css sheet -->
-          <picture>
-            <source srcset="img/w3/4a-CompetitorProfile-Windy-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/4a-CompetitorProfile-Windy-1200px.jpg" alt="Windy" height="500">
-          </picture>
-          <!-- Remove height after css sheet -->
-          <picture>
-            <source srcset="img/w3/4b-CompetitorProfile-Beachsafe-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/4b-CompetitorProfile-Beachsafe-1200px.jpg" alt="Beachsafe" height="500">
-          </picture>
+          <h3 align="center">Competitive Analysis</h3>
+          <p align="center">Focusing on Windy and Beachsafe – one weather-specific app and one safety-specific app – I identified each app’s key objectives, overall strategy, market advantage, marketing profile, and SWOT, and performed UX analyses.</p>
+          <div class="row">
+            <div class="column">
+              <picture>
+                <source srcset="img/w3/4a-CompetitorProfile-Windy-600px.jpg" media="(max-width:767px)">
+                <img src="img/w3/4a-CompetitorProfile-Windy-1200px.jpg" alt="Windy">
+              </picture>
+            </div>
+            <div class="column">
+              <picture>
+                <source srcset="img/w3/4b-CompetitorProfile-Beachsafe-600px.jpg" media="(max-width:767px)">
+                <img src="img/w3/4b-CompetitorProfile-Beachsafe-1200px.jpg" alt="Beachsafe">
+              </picture>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3>User Stories</h3>
-          <p>Stories help personify the ever-elusive user.<p>
+        <div class="user-stories">
+          <h3 align="center">User Stories</h3>
+          <p align="center">Stories help personify the ever-elusive user.<p>
               <div>
                 <ul>
                   <li>As a new user, I want to use the app initially without being forced to create an account, so I can decide if I like the app enough to sign up.</li>
@@ -142,9 +170,11 @@
         </div>
       </div>
       <div>
-        <h2>Observe</h2>
-        <div>
-          <div>
+        <h2>
+          <center>Observe</center>
+        </h2>
+        <div class="observe row">
+          <div class="column">
             <h4>Survey Insights</h4>
             <ul>
               <li>An overwhelming percentage of participants have experienced dangerous situations in their activities (74%) and said they would reference safety warnings/advice in an app if available (84%). So there’s clearly a market for a safety
@@ -155,7 +185,7 @@
                 people who may never have looked for a forecast app, but might use it if they saw it.</li>
             </ul>
           </div>
-          <div>
+          <div class="column">
             <h4>Interview Insights</h4>
             <ul>
               <li>Across the experience spectrum, user want hyper-local forecasts and conditions.</li>
@@ -168,15 +198,14 @@
           </div>
         </div>
         <div>
-          <h4>Affinity maps</h4>
-          <!-- Remove height after css sheet -->
+          <h4 align="center">Affinity maps</h4>
           <picture>
             <source srcset="img/w3/5b-AffinityMaps-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/5b-AffinityMaps-1200px.jpg" alt="Affinity Maps" height="300">
+            <img src="img/w3/5b-AffinityMaps-1200px.jpg" alt="Affinity Maps">
           </picture>
         </div>
-        <div>
-          <h4>Affinity Map Insights</h4>
+        <div class="affinity-insights">
+          <h4 align="center">Affinity Map Insights</h4>
           <ul>
             <li>Most of the participants only check basic weather conditions before planning water activities, so that feature should receive special consideration when designing the app.</li>
             <li>Many use the native app on their phone, or one of the first apps appearing in a search of the app store, so marketing and ratings/reviews are going to play an important part in getting the app noticed by potential users.</li>
@@ -192,125 +221,146 @@
         </div>
       </div>
       <div>
-        <h2>Point of View</h2>
+        <h2>
+          <center>Point of View</center>
+        </h2>
         <div>
-          <h4>User Peronas</h4>
-          <p>Findings from the interviews and surveys helped shape the user personas, Tanya and Daniel. They represent the two distinct groups that emerged from previous research and aid in a user-centered approach.</p>
-          <!-- Remove height after css sheet -->
-          <picture>
-            <source srcset="img/w3/6a-Tanya-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/6a-Tanya-1200px.jpg" alt="Tanya" height="300">
-          </picture>
-          <!-- Remove height after css sheet -->
-          <picture>
-            <source srcset="img/w3/6b-Daniel-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/6b-Daniel-1200px.jpg" alt="Daniel" height="300">
-          </picture>
+          <h4 align="center">User Peronas</h4>
+          <p align="center">Findings from the interviews and surveys helped shape the user personas, Tanya and Daniel. They represent the two distinct groups that emerged from previous research and aid in a user-centered approach.</p>
+          <div class="row">
+            <div class="column">
+              <picture>
+                <source srcset="img/w3/6a-Tanya-600px.jpg" media="(max-width:767px)">
+                <img src="img/w3/6a-Tanya-1200px.jpg" alt="Tanya">
+              </picture>
+            </div>
+            <div class="column">
+              <picture>
+                <source srcset="img/w3/6b-Daniel-600px.jpg" media="(max-width:767px)">
+                <img src="img/w3/6b-Daniel-1200px.jpg" alt="Daniel">
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
       <div>
-        <h2>Ideate</h2>
+        <h2>
+          <center>Ideate</center>
+        </h2>
         <div>
-          <h4>User Journeys & Task Flows</h4>
-          <p>Journeys and task flows illustrate the personas’ needs, giving direction to the app’s creation.</p>
-          <!-- Remove height after css sheet -->
+          <h4 align="center">User Journeys & Task Flows</h4>
+          <p align="center">Journeys and task flows illustrate the personas’ needs, giving direction to the app’s creation.</p>
+          <div class="row">
+            <div class="column">
           <picture>
             <source srcset="img/w3/7a-TanyaJourney-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/7a-TanyaJourney-1200px.jpg" alt="Tanya Journey" height="300">
+            <img src="img/w3/7a-TanyaJourney-1200px.jpg" alt="Tanya Journey">
           </picture>
-          <!-- Remove height after css sheet -->
+        </div>
+        <div class="column">
           <picture>
             <source srcset="img/w3/7c-DanielJourney-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/7c-DanielJourney-1200px.jpg" alt="Daniel Journey" height="300">
+            <img src="img/w3/7c-DanielJourney-1200px.jpg" alt="Daniel Journey">
           </picture>
-          <!-- Remove height after css sheet -->
+        </div>
+        </div>
+        <div class="row">
+          <div class="column">
           <picture>
             <source srcset="img/w3/7b-TanyaFlow-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/7b-TanyaFlow-1200px.jpg" alt="Tanya Flow" height="300">
+            <img src="img/w3/7b-TanyaFlow-1200px.jpg" alt="Tanya Flow">
           </picture>
-          <!-- Remove height after css sheet -->
+        </div>
+        <div class="column">
           <picture>
             <source srcset="img/w3/7d-DanielFlow-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/7d-DanielFlow-1200px.jpg" alt="Daniel Flow" height="300">
+            <img src="img/w3/7d-DanielFlow-1200px.jpg" alt="Daniel Flow">
           </picture>
         </div>
+        </div>
+        </div>
         <div>
-          <h4>Card Sort & Site Map</h4>
-          <p>Closed card sorting validated the pre-determined categories, but also provided new insights, which were implemented in the final version of the site map.</p>
-          <!-- Remove height after css sheet -->
+          <h4 align="center">Card Sort & Site Map</h4>
+          <p align="center">Closed card sorting validated the pre-determined categories, but also provided new insights, which were implemented in the final version of the site map.</p>
           <picture>
             <source srcset="img/w3/7e-SiteMap-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/7e-SiteMap-1200px.jpg" alt="Site Map" height="300">
+            <img src="img/w3/7e-SiteMap-1200px.jpg" alt="Site Map">
           </picture>
         </div>
       </div>
-      <div>
-        <h2>Prototyping</h2>
+      <div class="prototyping" !important>
+        <h2>
+          <center>Prototyping</center>
+        </h2>
         <div>
-          <h4>Low-Fidelity</h4>
-          <p>~SEARCH FOR A SPOT~</p>
-          <!-- Remove height after css sheet -->
+          <h4 align="center">Low-Fidelity</h4>
+          <p align="center">~SEARCH FOR A SPOT~</p>
           <picture>
             <source srcset="img/w3/8-Prototypes-lowfidelity-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/8-Prototypes-lowfidelity-1200px.jpg" alt="Low-Fidelity" height="300">
+            <img src="img/w3/8-Prototypes-lowfidelity-1200px.jpg" alt="Low-Fidelity">
           </picture>
         </div>
         <div>
-          <h4>Mid-Fidelity</h4>
-          <p>~ONBOARDING~</p>
-          <!-- Remove height after css sheet -->
+          <h4 align="center">Mid-Fidelity</h4>
+          <p align="center">~ONBOARDING~</p>
           <picture>
             <source srcset="img/w3/8-Prototypes-midfidelity-600px.jpg" media="(max-width:767px)">
-            <img src="img/w3/8-Prototypes-midfidelity-1200px.jpg" alt="Mid-Fidelity" height="300">
+            <img src="img/w3/8-Prototypes-midfidelity-1200px.jpg" alt="Mid-Fidelity">
           </picture>
         </div>
         <div>
-          <h4>High-Fidelity</h4>
-          <p>~VIEW A FAVORITE~</p>
-          <!-- Remove height after css sheet -->
+          <h4 align="center">High-Fidelity</h4>
+          <p align="center">~VIEW A FAVORITE~</p>
           <picture>
             <source srcset="img/w3/8-Prototypes-highfidelity-600px.png" media="(max-width:767px)">
-            <img src="img/w3/8-Prototypes-highfidelity-1200px.png" alt="High-Fidelity" height="300">
+            <img src="img/w3/8-Prototypes-highfidelity-1200px.png" alt="High-Fidelity">
           </picture>
         </div>
       </div>
       <div>
-        <h2>Testing & Iteration</h2>
+        <h2>
+          <center>Testing & Iteration</center>
+        </h2>
         <div>
-          <h4>Usability Test Report</h4>
-          <p>After concluding user testing, results were sorted into affinity maps and a rainbow spreadsheet. Top errors and issues identified during the usability test were addressed in the next iteration of the prototype.</p>
+          <h4 align="center">Usability Test Report</h4>
+          <p align="center">After concluding user testing, results were sorted into affinity maps and a rainbow spreadsheet. Top errors and issues identified during the usability test were addressed in the next iteration of the prototype.</p>
           <picture>
             <source srcset="img/w3/9-Testing-affinitymaps-600px.jpg" media="(max-width:767px)">
             <img src="img/w3/9-Testing-affinitymaps-1200px.jpg" alt="Affinity Maps" height="300">
           </picture>
         </div>
         <div>
-          <h4>Refining the Design</h4>
-          <p>Using preference tests, Gestalt psychology, Principles of Design, and peer reviews, the app went through several more iterations before reaching its current incarnation.</p>
+          <h4 align="center">Refining the Design</h4>
+          <p align="center">Using preference tests, Gestalt psychology, Principles of Design, and peer reviews, the app went through several more iterations before reaching its current incarnation.</p>
         </div>
       </div>
       <div>
         <a href="https://xd.adobe.com/view/199e4897-a442-4305-6b34-ee6484bbf733-6faf/" target="_blank">
-          <h2>Finished Prototype</h2>
+          <h2>
+            <center>Finished Prototype</center>
+          </h2>
         </a>
       </div>
       <div>
-        <h2>Appendix<h2>
-            <div>
-              <a href="https://drive.google.com/file/d/1qFa-sL7YYVbT8YBkLvvKFGtQsOEIKv0j/view" target="_blank"><p>Design Language System<br></a>
-              <a href="https://docs.google.com/spreadsheets/d/1hnTKIm09V27aIbjKO9zFXSHg68PuouzPVurT0125NoE/edit#gid=436865949" target="_blank">Rainbow Spread Sheet<br></a>
-              <a href="https://docs.google.com/document/d/17hQC5IzjqxpqBBgu3ArruNq76CAXMrHLODIP02N--gE/edit" target="_blank">Usability Test Script<br></a>
-              <a href="https://docs.google.com/spreadsheets/d/1pI2bwDx3mN-KUhvWkIpoWSSrUIPAIAaf9aLxM8Zv2is/edit#gid=0" target="_blank">Content Audit: Beachsafe</p></a>
-            </div>
+        <center>
+          <h2>Appendix</h2>
+          <div class="appendix">
+            <ul>
+              <li><a href="https://drive.google.com/file/d/1qFa-sL7YYVbT8YBkLvvKFGtQsOEIKv0j/view" target="_blank">Design Language System</a></li>
+              <li><a href="https://docs.google.com/spreadsheets/d/1hnTKIm09V27aIbjKO9zFXSHg68PuouzPVurT0125NoE/edit#gid=436865949" target="_blank">Rainbow Spread Sheet</a></li>
+              <li><a href="https://docs.google.com/document/d/17hQC5IzjqxpqBBgu3ArruNq76CAXMrHLODIP02N--gE/edit" target="_blank">Usability Test Script</a></li>
+              <li><a href="https://docs.google.com/spreadsheets/d/1pI2bwDx3mN-KUhvWkIpoWSSrUIPAIAaf9aLxM8Zv2is/edit#gid=0" target="_blank">Content Audit: Beachsafe</a></li>
+            </ul>
+          </div>
       </div>
-    </div>
+      </center </div>
   </main>
 
   <footer id="contact">
-    <div>
-      <h4><a href="#">Get in Touch</a></h4>
+    <div class="container">
+      <h4><a href="contact.html">Get in Touch</a></h4>
       <div>
-        <!--Social Media Icons - remove height after css sheet-->
+        <!--LinkedIn Icon - NOT SURE WHY THIS IS CENTERED-->
         <a href="https://www.linkedin.com/in/slboyd/" target="_blank"><img src="img/linkedin-logo.svg" height="100"></a>
       </div>
       <div>

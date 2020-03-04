@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://kit.fontawesome.com/bdeeab84ab.js" crossorigin="anonymous"></script>
   <!-- begin favicon code -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -23,12 +24,14 @@
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+      <img class="logo" src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha" class="logo">
       <nav>
         <ul>
-          <li><a href="index.html"><img src="https://i.imgur.com/o6Qrjfs.jpg" alt="logo-haha" class="logo"></a></li>
           <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -368,6 +371,11 @@
       </div>
     </div>
   </footer>
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

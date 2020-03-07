@@ -190,7 +190,7 @@ a:active {
 
 .logo {
   max-width: 150px;
-  min-width: 641px;
+  /*min-width: 641px;*/
 }
 
 nav > ul { /* selects unordered lists within the nav element */

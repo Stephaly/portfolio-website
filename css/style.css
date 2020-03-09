@@ -23,7 +23,7 @@ The only way to win against an ID selector is to use !important
 
 header {
   background-color: #e3dae2; /* same as rgba(71, 7, 64, 0.15) */
-  padding: 10px 0 4px;
+  padding: 10px;
   -webkit-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
   -moz-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
   box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
@@ -174,7 +174,7 @@ a:active {
 
 #hero {
   background-color: white;
-  padding: 10px 0;
+  padding: 100px 0;
   display: inline-block;
   width: 100%;
 }
@@ -233,6 +233,18 @@ nav > ul > li > a:hover, a:active {
 
 .navtoggle.responsive li  {
   display: block;
+}
+
+.navtoggle nav {
+  padding: 24px 0 0;
+}
+.navtoggle li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* Container holding W3 image and the text – INCORRECT scrolling over navigation */
@@ -300,18 +312,6 @@ Medium devices (640px and larger)
 }
 nav > ul {
   margin: 1em 0;
-}
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
 }
   header {
   text-align: unset;

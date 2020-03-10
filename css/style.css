@@ -20,9 +20,9 @@ a –> element
 #my-link –> id
 The only way to win against an ID selector is to use !important
 */
-
 header {
-  background-color: #e3dae2; /* same as rgba(71, 7, 64, 0.15) */
+  background-color: #e3dae2;
+  /* same as rgba(71, 7, 64, 0.15) */
   -webkit-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
   -moz-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
   box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
@@ -36,7 +36,8 @@ header {
 }
 
 * {
-  box-sizing: border-box; /* padding and border included in final width of element */
+  box-sizing: border-box;
+  /* padding and border included in final width of element */
 }
 
 body {
@@ -68,6 +69,7 @@ p, span {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-family: 'Philosopher', sans-serif;
   font-size: 2.75em;
@@ -85,6 +87,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -104,58 +107,64 @@ picture {
 
 a {
   color: #470740;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #6d6e71;
 }
+
 a:hover,
 a:focus {
   color: #79002d;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
+
 /* 'selected link'
 a:active {
   color: #1f0533;
 }*/
-
-
-
-
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #470740;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #ffffff !important;
+  /* needed to override the default link color */
   text-decoration: none;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #b2b3b6; /* width of the border, type, color */
+  border-bottom: 2px solid #b2b3b6;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
   /* transition-duration: 0.2s;
      transition-property: opacity; */
 }
+
 .button:hover,
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
 }
 
-
-
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-.column { /* How to make column width dependent on the number of columns? */
+.column {
+  /* How to make column width dependent on the number of columns? */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -174,7 +183,6 @@ a:active {
 
 #hero {
   background-color: white;
-
   display: inline-block;
   width: 100%;
 }
@@ -193,24 +201,26 @@ a:active {
   /*min-width: 641px;*/
 }
 
-nav > ul { /* selects unordered lists within the nav element */
+nav>ul {
+  /* selects unordered lists within the nav element */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a { /* selects links that are list elements within an unordered list within the nav element */
+nav>ul>li>a {
+  /* selects links that are list elements within an unordered list within the nav element */
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #470740;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #6d6e71
 }
 
-nav > ul > li > a:hover, a:active {
+nav>ul>li>a:hover, a:active {
   color: #79002d;
   text-decoration: underline;
 }
@@ -231,36 +241,38 @@ nav > ul > li > a:hover, a:active {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle nav {
   padding: 24px 0 0;
 }
-.navtoggle li  {
+
+.navtoggle li {
   display: block;
   padding: 10px 0;
 }
 
-.navtoggle li:last-child  {
+.navtoggle li:last-child {
   padding: 0 0 10px;
 }
 
 /* Container holding W3 image and the text – INCORRECT scrolling over navigation */
 .img-container {
- position: relative;
- padding-top: 85px;
- z-index: -1;
+  position: relative;
+  padding-top: 85px;
+  z-index: -1;
 }
 
 /* Bottom left text */
 .text-block {
- color: black;
- padding-left: 20px;
+  color: black;
+  padding-left: 20px;
 }
 
-.challenge { /* NOT WORKING */
+.challenge {
+  /* NOT WORKING */
   background-image: url("img/w3/2-TheChallengebackground-1200px.jpg");
 }
 
@@ -292,7 +304,7 @@ nav > ul > li > a:hover, a:active {
   padding-bottom: 5px;
 }
 
-.appendix > ul {
+.appendix>ul {
   list-style-type: none;
   padding: 0;
 }
@@ -303,16 +315,15 @@ Contact Form
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 * {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -o-text-rendering: optimizeLegibility;
 }
 
 /*
@@ -323,159 +334,194 @@ body {
 	line-height:30px;
 	color:#777;
 }*/
-
 .container2 {
-	max-width:400px;
-	width:100%;
-	margin:0 auto;
-	position:relative;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
-
-#contact {
-	padding:25px;
-	margin:50px 0;
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"], #contact-form textarea, #contact-form button[type="submit"] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-#contact h3 {
-	color: #470740;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
+#contact-form {
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#contact-form h3 {
+  color: #470740;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
   padding-bottom: 10px;
 }
 
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
+#contact-form h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
 }
 
 fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"], #contact-form textarea {
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
+#contact-form input[type="text"]:hover, #contact-form input[type="email"]:hover, #contact-form input[type="tel"]:hover, #contact-form input[type="url"]:hover, #contact-form textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #AAA;
 }
 
-#contact textarea {
-	height:100px;
-	max-width:100%;
-  resize:none;
+#contact-form textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
 }
 
-#contact button[type="submit"] {
-	cursor:pointer;
-	width:10em;
-	border:none;
+#contact-form button[type="submit"] {
+  cursor: pointer;
+  width: 10em;
+  border: none;
   border-radius: 10px;
-	background:#470740;
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
+  background: #470740;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
+#contact-form button[type="submit"]:hover {
+  background: #09C;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-#contact input:focus, #contact textarea:focus {
-	outline:0;
-	border:1px solid #999;
+#contact-form button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+#contact-form input:focus, #contact-form textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
 ::-webkit-input-placeholder {
- color:#888;
+  color: #888;
 }
+
 :-moz-placeholder {
- color:#888;
+  color: #888;
 }
+
 ::-moz-placeholder {
- color:#888;
+  color: #888;
 }
+
 :-ms-input-placeholder {
- color:#888;
+  color: #888;
 }
 
-
-
+/* ==============================
+Medium devices (335px to 639px)
+================================= */
+@media only screen and (min-width: 335px) and (max-width 639px){
+.col2-md-6 {
+  /* col = columns, md = medium devices, 6 = 6-column span */
+  column-gap: 40px;
+  }
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  nav > ul > li { /* selects list elements in unordered lists within the nav element */
+  nav>ul>li {
+    /* selects list elements in unordered lists within the nav element */
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-nav > ul {
-  margin: 1em 0;
-}
-  header {
-  text-align: unset;
-  padding: 10px 0 13px;
+    display: inline-block;
   }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  header {
+    text-align: unset;
+    padding: 10px 0 13px;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
   #hero {
-  text-align: center;
+    text-align: center;
   }
+
   #hero span {
-  display: block;
+    display: block;
   }
-  .col2-md-6 { /* col = columns, md = medium devices, 6 = 6-column span */
-  width: 50%;
+
+  .col2-md-6 {
+    /* col = columns, md = medium devices, 6 = 6-column span */
+    width: 50%;
   }
+
   .col3-md-6 {
     width: 33%;
   }
+
   [class*="col-"] {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
   }
-  #about-page h3 { margin-top: 0; margin-bottom: 10px; }
-  #home-page h3 { margin-top: 0; margin-bottom: 10px; }
+
+  #about-page h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #home-page h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* ==============================
 Medium devices (768px and larger)
 ================================= */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .text-block {
     width: 50%;
     margin-top: -15vw;
@@ -486,29 +532,35 @@ Medium devices (768px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 { /* first column within a row */
-  width: 58.33%;
+  .col-lg-7 {
+    /* first column within a row */
+    width: 58.33%;
   }
-  .col-lg-5 { /* second column within a row */
-  width: 41.66%;
+
+  .col-lg-5 {
+    /* second column within a row */
+    width: 41.66%;
   }
+
   .col2-lg-12 {
     width: 50%;
   }
+
   .col3-lg-12 {
     width: 33%;
   }
+
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* ==============================
 Large devices (1200px and larger)
 ================================= */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   .text-block {
     width: 50%;
     margin-top: -200px;
@@ -518,12 +570,16 @@ Large devices (1200px and larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 /* .sun {
@@ -538,9 +594,15 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 /* .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -553,8 +615,13 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {

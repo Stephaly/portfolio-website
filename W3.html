@@ -14,23 +14,26 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
   <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">-->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>W3</title>
+  <title>W<sup>3</sup></title>
 </head>
 
 <body>
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <img class="logo" src="img/s-logo.svg" alt="steph cat">
-        <nav>
-          <ul>
-            <li><a href="index.html">Projects</a></li>
+        <a href="index.html">
+          <img class="logo" src="img/s-logo.svg" alt="steph cat">
+        </a>
+          <nav>
+            <ul>
+              <li><a href="index.html#designs">Designs</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -39,14 +42,14 @@
   </header>
 
   <main>
-    <div class="container">
+    <div class="container" style="border-bottom: 1px solid #470740;">
       <div class="img-container">
         <picture>
           <source srcset="img/w3/1-Top-600px.jpg" media="(max-width:767px)">
           <img src="img/w3/1-Top-1200px.jpg" alt="W3">
         </picture>
         <div class="text-block">
-          <h4>W3 is a weather & water forecasting tool that provides future and current conditions, as well as local info, for both casual and serious water enthusiasts.</h4>
+          <h4>W<sup>3</sup> is a weather & water forecasting tool that provides future and current conditions, as well as local info, for both casual and serious water enthusiasts.</h4>
         </div>
       </div>
       <div class="challenge" !important>
@@ -62,7 +65,7 @@
       <div class="row">
         <div class="col3-md-6 col3-lg-12">
           <div>
-            <p><b>Project:</b> W3 | responsive web app<br>
+            <p><b>Project:</b> W<sup>3</sup> | responsive web app<br>
               <b>Role:</b> UX Designer, UX Researcher, UI Designer<br>
               <b>Duration:</b> July-December 2019<br>
               <b>Client:</b> CareerFoundry (as student)</p>
@@ -121,7 +124,7 @@
           <div class="col3-md-6 col3-lg-12">
             <h4>Potential Solutions</h4>
             <ul>
-              <li>W3 should pull its forecast data from proven reliable sources</li>
+              <li>W<sup>3</sup> should pull its forecast data from proven reliable sources</li>
               <li>Any ads should be tasteful and circumspect</li>
               <li>Accounts should be optional</li>
               <li>Development should be tested across multiple platforms</li>
@@ -366,15 +369,19 @@
   </main>
 
   <footer id="contact">
-    <!--<div class="container">
-      <h4><a href="contact.html">Get in Touch</a></h4>
-      <div>
-        <a href="https://www.linkedin.com/in/slboyd/" target="_blank"><img src="img/linkedin-logo.svg" height="100"></a>
-      </div> -->
-    <div>
-      <p>Copyright Stephanie Boyd 2020</p>
+    <div class="container">
+      <h2>Get in Touch</h2>
+        <div class="sb_footer">
+          <div class="f_row">
+            <div class="col-md-12">
+              <a class="footer-email fa fa-envelope fa-2x" target="_blank" href="mailto:stephaly.boyd@gmail.com"></a>
+                <a class="footer-email2" style="padding-left: 15px;" target="_blank" href="http://www.linkedin.com/in/slboyd">
+                <img src="img/linkedin-logo-sm.svg" style="padding-top: 3px;"></a>
+              <p style="display: flex; justify-content: flex-end;">&copy; Copyright Stephanie Boyd 2020</p>
+            </div>
+          </div>
+        </div>
     </div>
-    <!--</div>-->
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/jquery-3.4.1.min.js"></script>

@@ -22,7 +22,7 @@ a –> link element
 The only way to win against an ID selector is to use !important
 
 /* ========================================================
----------------->Header
+---------------->Menu
 =========================================================== */
 
 header {
@@ -33,6 +33,10 @@ header {
   font-size: 0.75em;
   font-weight: normal;
   line-height: 1;
+  /*
+  -webkit-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.6);
+  */
 }
 
 .logo {
@@ -54,6 +58,10 @@ nav>ul>li>a { /*controls formatting of desktop navigation*/
   font-weight: 700;
   color: #470740;
 }
+/* nav>ul>li>a:hover, a:active {
+  color: #79002d;
+  text-decoration: underline;
+}*/
 .navtoggle li:not(:last-child) { /*controls hideability of mobile navigation*/
   display: none;
 }
@@ -70,6 +78,16 @@ nav>ul>li>a { /*controls formatting of desktop navigation*/
 .navtoggle.responsive li { /*controls clickability of hamburger icon*/
   display: block;
 }
+/*.navtoggle nav { >>controls vertical alignment of desktop nav and padding in mobile header<<
+  padding: 24px 0 0;
+}
+.navtoggle li {
+  display: block;
+  padding: 10px 0;
+}
+.navtoggle li:last-child {
+  padding: 0 0 10px;
+}*/
 
 a {
   color: #470740;
@@ -77,12 +95,22 @@ a {
   /* No underlining */
 }
 
+/* visited link
+a:visited {
+  color: #6d6e71;
+}*/
+
 a:hover,
 a:focus {
   color: #79002d;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
+
+/* 'selected link'
+a:active {
+  color: #1f0533;
+}*/
 
 
 /* ========================================================
@@ -194,6 +222,8 @@ img {
   border-bottom: 2px solid #b2b3b6;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  /* transition-duration: 0.2s;
+     transition-property: opacity; */
 }
 
 .button:hover,
@@ -343,6 +373,10 @@ Medium devices (640px and larger)
     padding-bottom: -20px;
   }
 
+  /*nav>ul>li {
+    >> selects list elements in unordered lists within the nav element <<
+    display: inline-block;
+  }*/
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
